@@ -1,0 +1,7 @@
+<header>
+    <div class="marquee">
+      <span *ngFor="let currencyText of currencyUahList ">
+        1{{currencyText.currencyName}}={{currencyText.currencyValue | currency : "UAH" : "symbol"}}
+      </span>
+    </div>
+  </header>

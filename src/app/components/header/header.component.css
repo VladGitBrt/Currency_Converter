@@ -1,0 +1,34 @@
+
+  
+  header {
+    position: absolute;
+    width: 100vw;
+    margin-top: 20px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  header .marquee {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 30px;
+    animation: scroll 900s linear infinite;
+  }
+  
+
+  header .marquee > span {
+    color: white;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

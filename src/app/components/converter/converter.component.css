@@ -1,0 +1,36 @@
+.converter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.converter-block {
+    width: 800px;
+    height: 500px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 15px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+}
+
+.exchange-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+mat-icon {
+    align-self: center;
+    transform: scale(3);
+    color: Gray;
+}

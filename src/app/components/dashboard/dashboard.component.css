@@ -1,0 +1,51 @@
+.dashboard-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6  {
+    position: absolute;
+    background: radial-gradient(50.36% 50.36% at 71.53% 29.56%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #C897F9 0%, #308EFB 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+    z-index: -3;
+}
+
+.circle1 {
+    width: 250px;
+    height: 250px;
+    top: 25%;
+    left: 20%;
+}
+
+.circle2 {
+    width: 200px;
+    height: 200px;
+    top: 65%;
+    left: 65%;
+    transform: rotate(45deg);
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 50%;
+}
+
+.circle4 {
+    width: 250px;
+    height: 250px;
+    top: 70%;
+    left: 20%;
+}
+
+.circle5 {
+    width: 250px;
+    height: 250px;
+    top: 20%;
+    left: 65%;
+}

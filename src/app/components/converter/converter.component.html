@@ -1,0 +1,55 @@
+<div class="converter-container">
+    <div class="converter-block">
+        <div class="exchange-container">
+          <form>
+            <mat-form-field>
+              <input type="text"
+                     placeholder="Currency"
+                     matInput
+                     [formControl]="currency1"
+                     [matAutocomplete]="auto1">
+              <mat-autocomplete #auto1="matAutocomplete" (optionSelected)="calculateValue(null, 'first')">
+                <mat-option *ngFor="let option1 of filteredOptions1 | async" [value]="option1">
+                  {{option1}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </form>
+
+          <form>
+            <mat-form-field>
+              <input type="number"
+                     placeholder="Value"
+                     matInput
+                     [formControl]="value1">
+            </mat-form-field>
+          </form>
+        </div>
+        <mat-icon fontIcon="currency_exchange"></mat-icon>
+        <div class="exchange-container">
+          <form>
+            <mat-form-field>
+              <input type="text"
+                     placeholder="Currency"
+                     matInput
+                     [formControl]="currency2"
+                     [matAutocomplete]="auto2">
+              <mat-autocomplete #auto2="matAutocomplete" (optionSelected)="calculateValue(null, 'second')">
+                <mat-option *ngFor="let option2 of filteredOptions2 | async" [value]="option2">
+                  {{option2}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </form>
+
+          <form>
+            <mat-form-field>
+              <input type="number"
+                     placeholder="Value"
+                     matInput
+                     [formControl]="value2">
+            </mat-form-field>
+          </form>
+        </div>
+    </div>
+</div>
